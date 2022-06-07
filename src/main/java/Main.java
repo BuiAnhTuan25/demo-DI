@@ -3,11 +3,19 @@ public class Main {
         Outfit tshirt=new TShirt();
         Outfit jeans=new Jeans();
         Outfit sneaker=new Sneaker();
+        Outfit whiteShirt=new WhiteShirt();
+        Outfit redScarf=new RedScarf();
+        Outfit tie=new Tie();
+        Outfit leatherShoes=new LeatherShoes();
 
-        People tuanba59=new People(tshirt,jeans,sneaker);
+        People people=new People(tshirt,jeans,sneaker);
+        People teacher=new Teacher(whiteShirt,jeans,leatherShoes,tie);
+        People student=new Student(whiteShirt,jeans,sneaker,redScarf);
 
-        tuanba59.shirt.wear();
-        tuanba59.trousers.wear();
-        tuanba59.shoes.wear();
+        people.outfit();
+        System.out.println();
+        teacher.outfit();
+        System.out.println();
+        student.outfit();
     }
 }
