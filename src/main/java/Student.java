@@ -5,7 +5,8 @@ public class Student extends People {
         super(shirt, trousers, shoes);
         this.anything = anything;
     }
-    public void outfit(){
+
+    public void outfit() {
         System.out.println("Student");
         this.shirt.wear();
         this.trousers.wear();

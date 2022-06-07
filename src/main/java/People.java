@@ -8,7 +8,8 @@ public class People {
         this.trousers = trousers;
         this.shoes = shoes;
     }
-    public void outfit(){
+
+    public void outfit() {
         System.out.println("People");
         this.shirt.wear();
         this.trousers.wear();
